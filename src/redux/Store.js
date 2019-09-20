@@ -1,10 +1,6 @@
-import { createStore } from "redux";
-import reducerEstablecer from "./reducers/EstablecerColor"
+import { createStore, applyMiddleware } from "redux";
+import reducers from "./reducers/"
+import thunk from "redux-thunk";
 
 
-const defaultState = {
-    temas:[],
-    tema: "primary"
-};
-
-export default createStore(reducerEstablecer, defaultState);
+export default createStore(reducers, applyMiddleware(thunk));

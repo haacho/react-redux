@@ -1,6 +1,9 @@
 import { combineReducers } from "redux";
-import reducerEstablecer from "./EstablecerColor"
+
+import obtenerPosts from "./ObtenerPosts";
+import establecer from "./EstablecerColor";
 
 export default combineReducers({
-    reducerEstablecer
+    obtenerPosts,
+    establecer,
 });

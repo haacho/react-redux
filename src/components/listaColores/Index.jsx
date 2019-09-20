@@ -7,6 +7,7 @@ import obtenerColores from '../../redux/actions/ObtenerColores';
 class ListaColores extends Component {
     constructor(props) {
         super(props);
+        console.log(props);
         this.state = {};
     }
 
@@ -28,7 +29,8 @@ class ListaColores extends Component {
 
 const mapStateToProps = state => ({
     temas: state.temas,
-    tema: state.tema
+    tema: state.tema,
+    posts: state.posts,
 });
 
 const mapDispatchToProps = dispatch => ({
